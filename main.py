@@ -12,7 +12,7 @@ while True:
     onet,twot,threet.strip()
 
     topp = (onet,twot,threet)
-    toppdict = {'chicken': (3,-3,1), 'cheese': (-3,3,1), 'spices': (8,-5,1), 'jalapeno': (+20,-8,1),'sugar': (-5,8,0), "sewage": (0,0,0) }
+    toppdict = {'chicken': (3,-3,1), 'cheese': (-3,3,1), 'spices': (8,-5,1), 'jalapeno': (+20,-8,1),'sugar': (-5,8,0), "pineapple": (0,0,0) }
     splvl = 0
     sulvl=0
     edilvl=1
@@ -20,7 +20,7 @@ while True:
         lvl=toppdict[topp1]
         splvl += lvl[0]
         sulvl += lvl[1]
-        if "sewage" in topp:
+        if "pineapple" in topp:
             edilvl=0
 
         
