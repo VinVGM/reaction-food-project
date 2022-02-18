@@ -1,5 +1,5 @@
-from PIL import Image
-print("Welcome to Pizza Toppings Rating software. Create a combination of toppings and see how Vadivelu reacts to it!")
+
+print("Welcome to Pizza Toppings Rating software. Create a combination of toppings and see how the program reacts to it!")
 
 while True:
     print("Enter 3 toppings like cheese or chicken, etc")
@@ -25,20 +25,16 @@ while True:
 
         
     if splvl <9 and sulvl<3 and edilvl ==1:
-        img = Image.open("heavenly_pizza.jpg")
-        img.show()
+        print("This Pizza is super good! The people would enjoy this recipe.")
 
     if splvl>8 and edilvl == 1: 
-        img = Image.open("spicy.gif")
-        img.show()
+        print("This Pizza is very spicy! Please reduce the spiciness in the recipe.")
 
     if sulvl>3 and edilvl == 1:
-        img = Image.open("diabetes.png")
-        img.show()
+        print("This Pizza is very sweet! People may get diabetes from eating this Pizza.")
         
     if edilvl == 0:
-        img = Image.open("inedible.jpg")
-        img.show()
+        print("This is not a pizza. This is a mistake. Do not ever introduce this recipe in a hotel")
     
     yesno = input("Want to try another type of combination? (Y/N):")
     yesno.lower()
